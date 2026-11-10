@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valediction 2026 | Birla Public School, Doha, Qatar</title>
+  <meta name="description" content="A Nostalgic Evening Under the Arabian Stars — Senior Batch Graduation & Farewell Gala for Birla Public School, Doha - Class of 2026 at the Grand Ballroom, Hilton Doha, West Bay." />
+  <meta name="theme-color" content="#050A18" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Valediction 2026: The Final Roll Call | BPS Doha" />
+  <meta property="og:description" content="Celebrating memories, milestones, and new horizons for the Batch of 2026 at Hilton Doha, West Bay." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Cormorant Garamond, Cinzel, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: {
+              950: '#040814',
+              900: '#070E22',
+              800: '#0C1633',
+              700: '#13224A',
+            },
+            gold: {
+              100: '#FBF3D5',
+              200: '#F5E3A3',
+              300: '#EBD074',
+              400: '#DFB948',
+              500: '#D4AF37',
+              600: '#B59024',
+              700: '#8E6E16',
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 35px -5px rgba(212, 175, 55, 0.28)',
+            'gold-glow-lg': '0 0 60px -10px rgba(212, 175, 55, 0.42)',
+            'glass': '0 20px 50px rgba(2, 6, 23, 0.65)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <style>
+    :root {
+      --gold-primary: #D4AF37;
+      --gold-light: #F5E3A3;
+      --midnight-deep: #040814;
+    }
+
+    body {
+      background-color: #040814;
+      color: #F8FAFC;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Starlight & Arabian Night Gradient */
+    .arabian-sky {
+      background:
+        radial-gradient(circle at 18% 12%, rgba(212, 175, 55, 0.14) 0%, transparent 40%),
+        radial-gradient(circle at 82% 20%, rgba(30, 58, 138, 0.28) 0%, transparent 48%),
+        radial-gradient(circle at 50% 75%, rgba(212, 175, 55, 0.08) 0%, transparent 55%),
+        linear-gradient(180deg, #040814 0%, #070E22 45%, #09132C 80%, #040814 100%);
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+      background: linear-gradient(145deg, rgba(14, 25, 56, 0.72) 0%, rgba(7, 14, 34, 0.86) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(212, 175, 55, 0.52);
+      transform: translateY(-4px);
+      box-shadow: 0 22px 48px -12px rgba(0, 0, 0, 0.75), 0 0 28px -4px rgba(212, 175, 55, 0.22);
+    }
+
+    .glass-pill {
+      background: rgba(12, 22, 51, 0.78);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+    }
+
+    /* Subtle Gold Shimmer Border & Divider */
+    .gold-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.15) 20%, rgba(245, 227, 163, 0.75) 50%, rgba(212, 175, 55, 0.15) 80%, transparent 100%);
+    }
+
+    /* Timeline vertical line */
+    .timeline-spine {
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.65) 15%, rgba(245, 227, 163, 0.85) 50%, rgba(212, 175, 55, 0.65) 85%, rgba(212, 175, 55, 0.1) 100%);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #040814;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    /* Floating Lantern Glow Animation */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    .animate-float {
+      animation: floatSlow 7s ease-in-out infinite;
+    }
+
+    @keyframes pulseGold {
+      0%, 100% { opacity: 0.55; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    .animate-pulse-gold {
+      animation: pulseGold 4s ease-in-out infinite;
+    }
+
+    /* Filter Button Active State */
+    .filter-btn.active {
+      background: linear-gradient(135deg, #D4AF37 0%, #B59024 100%);
+      color: #040814;
+      font-weight: 600;
+      border-color: #F5E3A3;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+  </style>
+</head>
+<body class="arabian-sky font-sans antialiased selection:bg-gold-500 selection:text-midnight-950 relative min-h-screen">
+
+  <!-- Interactive Starfield Canvas Background -->
+  <canvas id="starfield-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-80"></canvas>
+
+  <!-- Sticky Navigation Header -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-midnight-950/80 backdrop-blur-xl border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- School Brand Crest -->
+      <a href="#hero" class="flex items-center gap-3.5 group focus:outline-none">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-300 via-gold-500 to-gold-700 p-[1.5px] shadow-gold-glow transition-transform duration-300 group-hover:scale-105">
+          <div class="w-full h-full rounded-full bg-midnight-950 flex items-center justify-center">
+            <span class="font-display font-bold text-gold-300 text-sm tracking-wider">BPS</span>
+          </div>
+        </div>
+        <div>
+          <span class="block font-display text-sm sm:text-base font-bold tracking-widest text-white uppercase">Valediction <span class="text-gold-400">2026</span></span>
+          <span class="block text-[11px] font-mono tracking-wider text-slate-300 uppercase">Birla Public School • Doha, Qatar</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-200">
+        <a href="#hero" class="hover:text-gold-300 transition-colors">Overview</a>
+        <a href="#itinerary" class="hover:text-gold-300 transition-colors">Evening Itinerary</a>
+        <a href="#memories" class="hover:text-gold-300 transition-colors">Memories &amp; Gallery</a>
+        <a href="#roll-call" class="hover:text-gold-300 transition-colors">Batch Roll Call</a>
+        <a href="#venue" class="hover:text-gold-300 transition-colors">Hilton Venue</a>
+      </nav>
+
+      <!-- Action / Celebrate Trigger -->
+      <div class="flex items-center gap-3">
+        <button
+          id="nav-confetti-btn"
+          type="button"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-midnight-950 bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:from-gold-200 hover:to-gold-400 shadow-gold-glow transition-all duration-200 active:scale-95 cursor-pointer"
+          aria-label="Trigger celebratory gold confetti"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+          <span>Toast to 2026</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-20">
+    <!-- ==========================================
+         1. HERO SECTION
+    =========================================== -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <!-- Decorative Arabian Arch & Starlight SVG Backdrop -->
+      <div class="absolute inset-0 pointer-events-none flex items-center justify-center opacity-20">
+        <svg class="w-[850px] h-[850px] text-gold-500/30 animate-pulse-gold" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="300" cy="300" r="280" stroke="currentColor" stroke-width="0.75" stroke-dasharray="6 6" />
+          <circle cx="300" cy="300" r="220" stroke="currentColor" stroke-width="1" />
+          <circle cx="300" cy="300" r="160" stroke="currentColor" stroke-width="0.5" />
+          <path d="M300 20 L315 285 L580 300 L315 315 L300 580 L285 315 L20 300 L285 285 Z" stroke="currentColor" stroke-width="0.75" />
+        </svg>
+      </div>
+
+      <div class="max-w-6xl mx-auto text-center relative z-10">
+        <!-- School Branding Badge -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2.5 px-5 py-2 rounded-full glass-pill mb-6 shadow-gold-glow">
+          <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+          <span class="font-display text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold-200">
+            Birla Public School, Doha - Class of 2026
+          </span>
+          <span class="hidden sm:inline text-gold-500/60">•</span>
+          <span class="hidden sm:inline text-xs font-mono text-slate-300">Senior Batch Gala</span>
+        </div>
+
+        <!-- Theme Kicker -->
+        <p class="font-serif italic text-xl sm:text-2xl md:text-3xl text-gold-300/95 mb-3 tracking-wide">
+          “A Nostalgic Evening Under the Arabian Stars”
+        </p>
+
+        <!-- Dramatic Headline -->
+        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+          Valediction 2026: <br class="hidden sm:inline" />
+          <span class="text-gold-300 drop-shadow-[0_2px_25px_rgba(212,175,55,0.35)]">The Final Roll Call</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-200/90 font-normal leading-relaxed mb-9">
+          Celebrating memories, milestones, and new horizons at <strong class="text-gold-200 font-semibold">Hilton Doha, West Bay</strong> — honoring fourteen years of scholarship, camaraderie, and the enduring legacy of our graduating seniors.
+        </p>
+
+        <!-- Commemorative Badge & Interactive Countdown/Archive Toggle -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div id="commemorative-badge" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl glass-card border-gold-400/50 shadow-gold-glow">
+            <span class="flex h-3 w-3 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
+            </span>
+            <div class="text-left">
+              <span class="block text-[11px] font-mono uppercase tracking-widest text-gold-300">Official Gala Status</span>
+              <span class="font-display text-sm sm:text-base font-bold text-white tracking-wider">Event Completed - February 2026</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl glass-card">
+            <svg class="w-5 h-5 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="text-left">
+              <span class="block text-[11px] font-mono uppercase tracking-widest text-slate-400">Time Since Curtain Call</span>
+              <span id="live-elapsed-timer" class="font-mono text-sm sm:text-base font-semibold text-gold-200">268 Days • 05 Hrs • Memorable Forever</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+          <a
+            href="#itinerary"
+            id="explore-itinerary-btn"
+            class="px-7 py-3.5 rounded-full font-semibold text-sm sm:text-base text-midnight-950 bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:from-gold-200 hover:to-gold-400 shadow-gold-glow-lg transition-all duration-300 hover:-translate-y-0.5"
+          >
+            Relive the Evening Itinerary
+          </a>
+          <a
+            href="#memories"
+            id="explore-gallery-btn"
+            class="px-7 py-3.5 rounded-full font-semibold text-sm sm:text-base text-gold-200 glass-pill hover:bg-gold-500/15 hover:border-gold-300 transition-all duration-300"
+          >
+            View Class of 2026 Gallery
+          </a>
+          <button
+            id="hero-confetti-btn"
+            type="button"
+            class="px-6 py-3.5 rounded-full font-semibold text-sm sm:text-base text-white glass-pill hover:border-gold-400/70 transition-all duration-300 inline-flex items-center gap-2 cursor-pointer"
+          >
+            <span>🎉 Launch Gold Salute</span>
+          </button>
+        </div>
+
+        <!-- Quick Stat Counter Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <!-- Stat Card 1 -->
+          <div class="glass-card rounded-2xl p-6 text-center relative overflow-hidden group">
+            <div class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-1">Grand Gathering</div>
+            <div class="font-display text-3xl sm:text-4xl font-bold text-white mb-1 flex items-center justify-center gap-1">
+              <span class="stat-counter" data-target="450">450</span><span>+ Attendees</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300">Graduating Seniors, Faculty &amp; Honored Guests</p>
+          </div>
+
+          <!-- Stat Card 2 -->
+          <div class="glass-card rounded-2xl p-6 text-center relative overflow-hidden group">
+            <div class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-1">Senior Divisions</div>
+            <div class="font-display text-2xl sm:text-3xl font-bold text-white mb-1 py-1">
+              Grade 12 N &amp; Batches
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300">Science, Commerce &amp; Humanities Streams United</p>
+          </div>
+
+          <!-- Stat Card 3 -->
+          <div class="glass-card rounded-2xl p-6 text-center relative overflow-hidden group">
+            <div class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-1">Arabian Starlight Gala</div>
+            <div class="font-display text-3xl sm:text-4xl font-bold text-white mb-1">
+              1 Incredible Evening
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300">Grand Ballroom, Hilton Doha, West Bay</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gold-divider max-w-6xl mx-auto"></div>
+
+    <!-- ==========================================
+         2. EVENING ITINERARY / HIGHLIGHTS
+    =========================================== -->
+    <section id="itinerary" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-xs uppercase tracking-[0.25em] text-gold-400 block mb-3">Order of Proceedings • Hilton Grand Ballroom</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+          Evening Itinerary &amp; Highlights
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg font-serif italic">
+          Five unforgettable chapters of elegance, tribute, music, and nostalgia under the West Bay skyline.
+        </p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative">
+        <!-- Vertical Spine -->
+        <div class="hidden md:block absolute left-1/2 top-4 bottom-4 w-0.5 -translate-x-1/2 timeline-spine"></div>
+
+        <div class="space-y-10 md:space-y-14">
+          <!-- Timeline Item 1 -->
+          <div class="relative flex flex-col md:flex-row items-center group">
+            <div class="md:w-1/2 md:pr-12 w-full">
+              <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/15 text-gold-300 border border-gold-500/30">
+                    05:30 PM – 06:30 PM AST
+                  </span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Chapter I • Foyer</span>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+                  Red Carpet Arrival &amp; Mocktails
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  Graduating seniors from Grade 12 N and fellow sections make their grand entrance along the illuminated palm promenade at Hilton Doha. Welcomed with signature saffron-rose &amp; mint citrus mocktails, boutonnieres, and live paparrazi portraits at the golden arch photo-op wall.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">360° Glambot Booth</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Signature Mocktail Bar</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Batch Crest Pins</span>
+                </div>
+              </div>
+            </div>
+            <!-- Center Node -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-midnight-950 border-2 border-gold-400 items-center justify-center shadow-gold-glow z-10">
+              <span class="font-mono text-xs font-bold text-gold-300">01</span>
+            </div>
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <p class="font-serif italic text-lg text-gold-300/80">“Suits pressed, sarees draped, and fourteen years of schoolyard laughter converging onto one red carpet.”</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative flex flex-col md:flex-row-reverse items-center group">
+            <div class="md:w-1/2 md:pl-12 w-full">
+              <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/15 text-gold-300 border border-gold-500/30">
+                    06:30 PM – 07:30 PM AST
+                  </span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Chapter II • Main Stage</span>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+                  Principal &amp; Valedictorian Keynotes
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  Ceremonial lighting of the lamp followed by inspiring addresses from the Principal, Senior Vice-Principals, and Head Boy &amp; Head Girl. A moving reflection on resilience, academic excellence, and carrying the Birla Public School torch across global universities.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Candlelight Vigil</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Principal's Blessing</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Valedictory Address</span>
+                </div>
+              </div>
+            </div>
+            <!-- Center Node -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-midnight-950 border-2 border-gold-400 items-center justify-center shadow-gold-glow z-10">
+              <span class="font-mono text-xs font-bold text-gold-300">02</span>
+            </div>
+            <div class="md:w-1/2 md:pr-12 hidden md:block text-right">
+              <p class="font-serif italic text-lg text-gold-300/80">“Passing the flame of knowledge from Abu Hamour classrooms to horizons around the world.”</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative flex flex-col md:flex-row items-center group">
+            <div class="md:w-1/2 md:pr-12 w-full">
+              <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/15 text-gold-300 border border-gold-500/30">
+                    07:30 PM – 08:45 PM AST
+                  </span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Chapter III • Spotlight</span>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+                  Musical Performances &amp; Class Awards
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  Unplugged acoustic medleys by the Senior School Band, classical-contemporary fusion choreography, and the much-awaited Class Superlatives &amp; Sash Ceremony — crowning Mr. &amp; Ms. Valediction 2026 alongside lighthearted batch honors.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Senior Band Medley</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Mr. &amp; Ms. BPS 2026</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Class Superlative Sashes</span>
+                </div>
+              </div>
+            </div>
+            <!-- Center Node -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-midnight-950 border-2 border-gold-400 items-center justify-center shadow-gold-glow z-10">
+              <span class="font-mono text-xs font-bold text-gold-300">03</span>
+            </div>
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <p class="font-serif italic text-lg text-gold-300/80">“Every chord sung together in the ballroom echoed a thousand recess bells.”</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="relative flex flex-col md:flex-row-reverse items-center group">
+            <div class="md:w-1/2 md:pl-12 w-full">
+              <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/15 text-gold-300 border border-gold-500/30">
+                    08:45 PM – 09:45 PM AST
+                  </span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Chapter IV • Culinary</span>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+                  Grand Dinner Buffet at Hilton
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  A curated five-star banquet prepared by Hilton Doha’s executive culinary team, featuring Levantine mezze, royal Indian dum biryani &amp; kebabs, continental carving stations, and a bespoke three-tier navy-and-gold "Class of 2026" celebratory cake cutting.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">5-Star International Buffet</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Ceremonial Cake Cutting</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Faculty &amp; Student Tables</span>
+                </div>
+              </div>
+            </div>
+            <!-- Center Node -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-midnight-950 border-2 border-gold-400 items-center justify-center shadow-gold-glow z-10">
+              <span class="font-mono text-xs font-bold text-gold-300">04</span>
+            </div>
+            <div class="md:w-1/2 md:pr-12 hidden md:block text-right">
+              <p class="font-serif italic text-lg text-gold-300/80">“Breaking bread one last time as classmates, teachers, and lifelong friends.”</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="relative flex flex-col md:flex-row items-center group">
+            <div class="md:w-1/2 md:pr-12 w-full">
+              <div class="glass-card rounded-2xl p-6 sm:p-8 relative">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/15 text-gold-300 border border-gold-500/30">
+                    09:45 PM – 11:00 PM AST
+                  </span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Chapter V • Finale</span>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+                  DJ &amp; Nostalgia Video Reel
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  Lights dim for the premiere of the 15-minute archival documentary tracing the Batch of 2026 from Kindergarten to Senior Year, culminating in the Final Roll Call, an electrifying DJ dance floor, and a golden confetti shower across the ballroom.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">2012–2026 Memory Reel</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Final Roll Call</span>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-midnight-800 text-gold-200 border border-gold-500/20">Gold Confetti Finale</span>
+                </div>
+              </div>
+            </div>
+            <!-- Center Node -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-midnight-950 border-2 border-gold-400 items-center justify-center shadow-gold-glow z-10">
+              <span class="font-mono text-xs font-bold text-gold-300">05</span>
+            </div>
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <p class="font-serif italic text-lg text-gold-300/80">“Not a goodbye — only a golden 'see you soon' under the Doha night sky.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gold-divider max-w-6xl mx-auto"></div>
+
+    <!-- ==========================================
+         3. INTERACTIVE MEMORIES & GALLERY GRID
+    =========================================== -->
+    <section id="memories" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-gold-400 block mb-3">Captured Moments • Batch of 2026 Archive</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white tracking-tight">
+            Interactive Memories &amp; Gallery
+          </h2>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filter Gallery Memories">
+          <button type="button" data-filter="all" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-medium glass-pill text-slate-200 transition-all cursor-pointer">
+            All Moments (6)
+          </button>
+          <button type="button" data-filter="red-carpet" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium glass-pill text-slate-200 hover:border-gold-400 transition-all cursor-pointer">
+            Red Carpet &amp; Portraits
+          </button>
+          <button type="button" data-filter="ceremony" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium glass-pill text-slate-200 hover:border-gold-400 transition-all cursor-pointer">
+            Keynotes &amp; Honors
+          </button>
+          <button type="button" data-filter="nostalgia" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium glass-pill text-slate-200 hover:border-gold-400 transition-all cursor-pointer">
+            Grade 12 N &amp; Nostalgia
+          </button>
+        </div>
+      </div>
+
+      <!-- Gallery Cards Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Card 1 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="red-carpet"
+          data-title="West Bay Starlight Arrival"
+          data-subtitle="Hilton Doha Promenade • 05:45 PM"
+          data-quote="Walking down the Hilton carpet beside friends I've known since KG-1 felt surreal. The Doha Corniche lights behind us made it pure magic."
+          data-tags="Grade 12 N,Red Carpet,West Bay"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <!-- Scenic Formal SVG Art Layout -->
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="sky1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#050C24"/>
+                  <stop offset="60%" stop-color="#0F214F"/>
+                  <stop offset="100%" stop-color="#291E10"/>
+                </linearGradient>
+                <radialGradient id="glow1" cx="0.5" cy="0.3" r="0.5">
+                  <stop offset="0%" stop-color="#F5E3A3" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="600" height="400" fill="url(#sky1)"/>
+              <circle cx="300" cy="130" r="180" fill="url(#glow1)"/>
+              <!-- Doha Skyline Silhouette -->
+              <path d="M0 320 L50 320 L50 220 L85 200 L85 320 L130 320 L135 160 Q155 110 175 160 L180 320 L230 320 L230 190 L275 190 L275 320 L340 320 L355 140 L395 165 L395 320 L450 320 L450 210 L495 210 L495 320 L600 320 L600 400 L0 400 Z" fill="#040814" opacity="0.9"/>
+              <!-- Golden Arch & Red Carpet -->
+              <path d="M220 320 Q300 160 380 320" stroke="#D4AF37" stroke-width="3" fill="none"/>
+              <polygon points="260,320 340,320 420,400 180,400" fill="#7F1D1D" opacity="0.75"/>
+              <line x1="260" y1="320" x2="180" y2="400" stroke="#F5E3A3" stroke-width="2"/>
+              <line x1="340" y1="320" x2="420" y2="400" stroke="#F5E3A3" stroke-width="2"/>
+              <!-- Stars -->
+              <circle cx="90" cy="70" r="2" fill="#F5E3A3"/>
+              <circle cx="480" cy="60" r="2.5" fill="#F5E3A3"/>
+              <circle cx="520" cy="120" r="1.5" fill="#F5E3A3"/>
+              <circle cx="190" cy="95" r="1.8" fill="#F5E3A3"/>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Formal Portraits
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                West Bay Starlight Arrival
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “Walking down the Hilton carpet beside friends I've known since KG-1 felt surreal. The Doha Corniche lights behind us made it pure magic.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#Grade12N • #RedCarpet</span>
+              <span class="text-slate-400">Batch Representatives</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="ceremony"
+          data-title="The Ceremonial Torch & Valedictory Oath"
+          data-subtitle="Grand Ballroom Stage • 06:50 PM"
+          data-quote="When 450 candles lit up the darkened Grand Ballroom simultaneously, you could see fourteen years of shared pride reflected in every single flame."
+          data-tags="Candlelight Vigil,Batch of 2026,Keynote"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="torchGlow" cx="0.5" cy="0.42" r="0.45">
+                  <stop offset="0%" stop-color="#FBF3D5" stop-opacity="0.8"/>
+                  <stop offset="45%" stop-color="#D4AF37" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#040814" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="600" height="400" fill="#060D21"/>
+              <circle cx="300" cy="170" r="210" fill="url(#torchGlow)"/>
+              <!-- Stage Arch -->
+              <path d="M110 360 L110 130 Q300 40 490 130 L490 360" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.5"/>
+              <!-- Podium & Candle Flames -->
+              <rect x="270" y="230" width="60" height="110" rx="4" fill="#0B1536" stroke="#D4AF37" stroke-width="2"/>
+              <path d="M300 135 Q322 175 300 205 Q278 175 300 135 Z" fill="#F5E3A3"/>
+              <!-- Row of student candles -->
+              <circle cx="150" cy="300" r="6" fill="#F5E3A3"/>
+              <circle cx="195" cy="290" r="6" fill="#F5E3A3"/>
+              <circle cx="240" cy="285" r="6" fill="#F5E3A3"/>
+              <circle cx="360" cy="285" r="6" fill="#F5E3A3"/>
+              <circle cx="405" cy="290" r="6" fill="#F5E3A3"/>
+              <circle cx="450" cy="300" r="6" fill="#F5E3A3"/>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Ceremonial Oath
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                The Ceremonial Torch &amp; Oath
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “When 450 candles lit up the darkened Grand Ballroom simultaneously, you could see fourteen years of shared pride reflected in every single flame.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#CandlelightVigil • #Prefects</span>
+              <span class="text-slate-400">Student Council 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="nostalgia"
+          data-title="Grade 12 N & Senior Sections Portrait"
+          data-subtitle="Grand Staircase & Ballroom • 07:40 PM"
+          data-quote="From chaotic morning assemblies and physics lab deadlines to standing shoulder-to-shoulder at Hilton Doha — Grade 12 N & the Batch of 2026 made history."
+          data-tags="Grade 12 N,Class Portrait,Forever BPS"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#07112B"/>
+              <!-- Chandelier geometric -->
+              <circle cx="300" cy="60" r="45" stroke="#D4AF37" stroke-width="2" fill="none"/>
+              <circle cx="300" cy="60" r="25" stroke="#F5E3A3" stroke-width="1.5" fill="none"/>
+              <line x1="300" y1="0" x2="300" y2="105" stroke="#D4AF37" stroke-width="1.5"/>
+              <!-- Tiered Steps for Group Photo -->
+              <rect x="60" y="310" width="480" height="25" fill="#101F47" stroke="#D4AF37" stroke-width="1"/>
+              <rect x="90" y="275" width="420" height="25" fill="#132554" stroke="#D4AF37" stroke-width="1"/>
+              <rect x="120" y="240" width="360" height="25" fill="#172C63" stroke="#D4AF37" stroke-width="1"/>
+              <!-- Banner -->
+              <rect x="170" y="145" width="260" height="58" rx="10" fill="#040814" stroke="#D4AF37" stroke-width="2"/>
+              <text x="300" y="180" text-anchor="middle" fill="#F5E3A3" font-family="Cinzel, serif" font-size="22" font-weight="bold">CLASS OF 2026</text>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Batch Milestone
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                Grade 12 N &amp; Batch Group Portrait
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “From chaotic morning assemblies and physics lab deadlines to standing shoulder-to-shoulder at Hilton Doha — Grade 12 N &amp; the Batch of 2026 made history.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#Grade12N • #SeniorBatch</span>
+              <span class="text-slate-400">All 12th Divisions</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="ceremony"
+          data-title="Acoustic Symphony & Superlative Honors"
+          data-subtitle="Ballroom Center Stage • 08:10 PM"
+          data-quote="Singing our final chorus together while the superlative sashes were handed out had the entire room cheering and wiping away happy tears."
+          data-tags="Live Music,Class Awards,Valediction"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#050B1C"/>
+              <!-- Spotlight beams -->
+              <polygon points="150,0 40,400 260,400" fill="#D4AF37" opacity="0.12"/>
+              <polygon points="450,0 340,400 560,400" fill="#F5E3A3" opacity="0.12"/>
+              <polygon points="300,0 180,400 420,400" fill="#D4AF37" opacity="0.18"/>
+              <!-- Soundwave & Crown Emblem -->
+              <path d="M230 210 L250 160 L300 195 L350 160 L370 210 Z" fill="none" stroke="#F5E3A3" stroke-width="3"/>
+              <circle cx="300" cy="200" r="85" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Stage &amp; Awards
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                Acoustic Medley &amp; Superlative Honors
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “Singing our final chorus together while the superlative sashes were handed out had the entire room cheering and wiping away happy tears.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#BPSChoir • #ClassAwards</span>
+              <span class="text-slate-400">Cultural Ensemble</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="red-carpet"
+          data-title="The Golden Banquet & Three-Tier Cake Toast"
+          data-subtitle="Hilton Dining Hall • 09:15 PM"
+          data-quote="Teachers who guided us through every board exam prep joined our tables for the cake toast — a moment of pure gratitude and warmth."
+          data-tags="Hilton Banquet,Faculty Tribute,Gala Dinner"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#081229"/>
+              <!-- Three-tier cake illustration -->
+              <rect x="200" y="270" width="200" height="60" rx="8" fill="#0F1E45" stroke="#D4AF37" stroke-width="2.5"/>
+              <rect x="230" y="215" width="140" height="55" rx="6" fill="#132657" stroke="#D4AF37" stroke-width="2.5"/>
+              <rect x="255" y="165" width="90" height="50" rx="6" fill="#18306E" stroke="#D4AF37" stroke-width="2.5"/>
+              <!-- Sparkler on top -->
+              <line x1="300" y1="120" x2="300" y2="165" stroke="#F5E3A3" stroke-width="2.5"/>
+              <circle cx="300" cy="115" r="18" fill="#F5E3A3" opacity="0.35"/>
+              <circle cx="300" cy="115" r="5" fill="#FFFFFF"/>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Royal Banquet
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                The Golden Banquet &amp; Cake Toast
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “Teachers who guided us through every board exam prep joined our tables for the cake toast — a moment of pure gratitude and warmth.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#HiltonDining • #Mentors</span>
+              <span class="text-slate-400">Faculty &amp; Seniors</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article
+          class="gallery-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer group"
+          data-category="nostalgia"
+          data-title="The Final Roll Call & Confetti Curtain Call"
+          data-subtitle="Grand Ballroom Dance Floor • 10:35 PM"
+          data-quote="As the Nostalgia Reel faded to 'Class of 2026 — Dismissed with Honor' and gold confetti rained down, we knew these bonds would outlast distance and time."
+          data-tags="Final Roll Call,Nostalgia Reel,Class of 2026"
+        >
+          <div class="relative h-56 overflow-hidden bg-midnight-900">
+            <svg class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#040814"/>
+              <!-- Confetti specs -->
+              <rect x="90" y="60" width="10" height="5" fill="#D4AF37" transform="rotate(20 90 60)"/>
+              <rect x="180" y="95" width="12" height="5" fill="#F5E3A3" transform="rotate(-15 180 95)"/>
+              <rect x="290" y="50" width="10" height="5" fill="#D4AF37" transform="rotate(35 290 50)"/>
+              <rect x="420" y="80" width="11" height="5" fill="#F5E3A3" transform="rotate(-25 420 80)"/>
+              <rect x="500" y="120" width="9" height="5" fill="#D4AF37" transform="rotate(15 500 120)"/>
+              <rect x="140" y="160" width="10" height="5" fill="#F5E3A3" transform="rotate(40 140 160)"/>
+              <rect x="460" y="175" width="10" height="5" fill="#D4AF37" transform="rotate(-35 460 175)"/>
+              <!-- Film Reel Frame -->
+              <rect x="140" y="120" width="320" height="175" rx="12" fill="#0B1636" stroke="#D4AF37" stroke-width="2.5"/>
+              <text x="300" y="205" text-anchor="middle" fill="#FFFFFF" font-family="Cinzel, serif" font-size="24" font-weight="bold">2012 — 2026</text>
+              <text x="300" y="235" text-anchor="middle" fill="#D4AF37" font-family="Cormorant Garamond, serif" font-style="italic" font-size="18">The Final Roll Call</text>
+            </svg>
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-midnight-950/85 text-gold-300 border border-gold-500/30">
+              Grand Finale
+            </div>
+            <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-xs font-mono bg-midnight-950/80 text-slate-200">
+              Click to Inspect ↗
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
+                Final Roll Call &amp; Confetti Shower
+              </h3>
+              <blockquote class="font-serif italic text-slate-300 text-base leading-relaxed mb-4">
+                “As the Nostalgia Reel faded to 'Class of 2026 — Dismissed with Honor' and gold confetti rained down, we knew these bonds would outlast distance and time.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-gold-500/15 flex items-center justify-between text-xs">
+              <span class="font-mono text-gold-300">#Valediction2026 • #Encore</span>
+              <span class="text-slate-400">Closing Finale</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3B. INTERACTIVE BATCH ROLL CALL & MEMORY WALL
+    =========================================== -->
+    <section id="roll-call" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border-gold-500/30">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-[0.25em] text-gold-400 block mb-2">Interactive Commemorative Ledger</span>
+            <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">
+              Senior Divisions &amp; Student Memory Wall
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base mt-1">
+              Select a stream or division to view the Batch of 2026 roll call tributes and add your own celebratory salute.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2" id="division-pills">
+            <button type="button" data-division="12-N" class="division-btn active px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-gold-500 text-midnight-950 font-bold cursor-pointer transition-all">
+              Grade 12 N (Flagship)
+            </button>
+            <button type="button" data-division="Science" class="division-btn px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-midnight-800 text-gold-200 border border-gold-500/30 hover:border-gold-400 cursor-pointer transition-all">
+              Science Stream (A–M)
+            </button>
+            <button type="button" data-division="Commerce" class="division-btn px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-midnight-800 text-gold-200 border border-gold-500/30 hover:border-gold-400 cursor-pointer transition-all">
+              Commerce Stream (O–S)
+            </button>
+            <button type="button" data-division="Humanities" class="division-btn px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-midnight-800 text-gold-200 border border-gold-500/30 hover:border-gold-400 cursor-pointer transition-all">
+              Humanities Stream (T–V)
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Division Display -->
+        <div id="division-spotlight" class="rounded-2xl bg-midnight-950/75 border border-gold-500/25 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono text-gold-400 uppercase tracking-widest mb-2">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              <span id="division-badge">Division Spotlight • Grade 12 N</span>
+            </div>
+            <h4 id="division-title" class="font-display text-xl sm:text-2xl font-bold text-white mb-2">
+              Grade 12 N — The Trailblazers of Abu Hamour
+            </h4>
+            <p id="division-quote" class="font-serif italic text-slate-200 text-base sm:text-lg leading-relaxed">
+              “Known across the senior wing for unmatched spirit, late-night project sprints, and standing together through every milestone — Grade 12 N leads the Final Roll Call with pride.”
+            </p>
+          </div>
+          <div class="shrink-0 flex flex-col items-start md:items-end gap-2">
+            <span id="division-stat" class="font-mono text-xs text-gold-200 px-3.5 py-1.5 rounded-lg bg-gold-500/10 border border-gold-500/30">
+              100% Roll Call Attendance • Hilton Gala
+            </span>
+            <button
+              id="salute-division-btn"
+              type="button"
+              class="text-xs font-semibold text-gold-300 hover:text-gold-200 underline underline-offset-4 cursor-pointer"
+            >
+              Send Gold Confetti Salute for this Batch →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gold-divider max-w-6xl mx-auto"></div>
+
+    <!-- ==========================================
+         4. VENUE & COMMEMORATION CARD
+    =========================================== -->
+    <section id="venue" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Venue Details Card (7 Cols) -->
+        <div class="lg:col-span-7 glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/15 border border-gold-500/30 text-gold-300 text-xs font-mono uppercase tracking-widest mb-6">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Official Gala Destination</span>
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-3">
+              Grand Ballroom, Hilton Doha
+            </h2>
+            <p class="text-gold-300 font-medium text-base sm:text-lg mb-6">
+              Diplomatic Area, West Bay, Doha, Qatar
+            </p>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+              Overlooking the shimmering Arabian Gulf along the iconic West Bay Corniche, the Grand Ballroom at Hilton Doha hosted over 450 graduating seniors, faculty mentors, and dignitaries under bespoke crystal chandeliers and starlight stagecraft.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div class="p-4 rounded-2xl bg-midnight-950/60 border border-gold-500/20">
+                <span class="block text-xs font-mono uppercase text-slate-400 mb-1">Hall &amp; Wing</span>
+                <span class="font-semibold text-white text-sm sm:text-base">Al Wajba / Grand Ballroom Wing</span>
+                <span class="block text-xs text-gold-300 mt-0.5">Private Valet &amp; Red Carpet Foyer</span>
+              </div>
+              <div class="p-4 rounded-2xl bg-midnight-950/60 border border-gold-500/20">
+                <span class="block text-xs font-mono uppercase text-slate-400 mb-1">Dress Code</span>
+                <span class="font-semibold text-white text-sm sm:text-base">Black Tie / Formal Traditional</span>
+                <span class="block text-xs text-gold-300 mt-0.5">Midnight Navy &amp; Gold Accents</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-gold-500/20">
+            <a
+              id="venue-directions-btn"
+              href="https://www.google.com/maps/search/?api=1&query=Hilton+Doha+Diplomatic+Area+West+Bay+Doha+Qatar"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full font-semibold text-sm text-midnight-950 bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:from-gold-200 hover:to-gold-400 shadow-gold-glow transition-all"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <span>Interactive Directions to Hilton Doha</span>
+            </a>
+
+            <button
+              id="copy-venue-btn"
+              type="button"
+              class="px-5 py-3.5 rounded-full text-xs sm:text-sm font-mono text-gold-200 glass-pill hover:border-gold-400 transition-all cursor-pointer"
+            >
+              Copy Venue Pin
+            </button>
+          </div>
+        </div>
+
+        <!-- Commemoration Message Card from Organizing Committee (5 Cols) -->
+        <div class="lg:col-span-5 glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between border-gold-400/40 relative">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="font-mono text-xs uppercase tracking-widest text-gold-400">Commemorative Scroll</span>
+              <span class="text-xs font-mono text-slate-400">Feb 2026 • Doha</span>
+            </div>
+
+            <h3 class="font-display text-2xl font-bold text-white mb-4">
+              Message from the Organizing Committee
+            </h3>
+
+            <div class="space-y-4 font-serif text-lg text-slate-200 leading-relaxed italic">
+              <p>
+                “To the extraordinary Batch of 2026 — from your very first footsteps inside Birla Public School to your final bow beneath the chandeliers of Hilton Doha, you have exemplified intellect, kindness, and character.”
+              </p>
+              <p>
+                “May the friendships forged in our corridors and celebrated under the Arabian stars remain your compass as you step boldly into universities and careers across the globe.”
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-gold-500/25">
+            <div class="font-display text-sm font-bold text-gold-300 uppercase tracking-wider">
+              Valediction 2026 Organizing Committee
+            </div>
+            <div class="text-xs text-slate-400 mt-1">
+              Senior Leadership, Faculty Council &amp; Student Prefect Board • Birla Public School, Doha
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       5. FOOTER
+  =========================================== -->
+  <footer class="relative z-10 border-t border-gold-500/20 bg-midnight-950/90 backdrop-blur-lg py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-2">
+          <span class="font-display font-bold text-lg text-white tracking-wider">VALEDICTION <span class="text-gold-400">2026</span></span>
+          <span class="text-gold-500/50">•</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-gold-300">Class of 2026 Sign-Off</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Birla Public School, Doha, Qatar • Grand Ballroom, Hilton Doha, Diplomatic Area, West Bay.
+        </p>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p class="font-serif italic text-gold-200 text-base mb-1">
+          “Once a Birlite, Always a Birlite — Ad Astra Per Aspera.”
+        </p>
+        <p class="text-xs text-slate-400">
+          &copy; 2026 Birla Public School Doha — Batch of 2026 Gala Archive. Crafted with pride for the Graduating Seniors.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       LIGHTBOX MODAL FOR GALLERY CARDS
+  =========================================== -->
+  <div
+    id="gallery-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-midnight-950/85 backdrop-blur-md"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border-gold-400/50 shadow-gold-glow-lg relative">
+      <button
+        id="close-modal-btn"
+        type="button"
+        class="absolute top-5 right-5 w-9 h-9 rounded-full bg-midnight-800 text-slate-300 hover:text-white flex items-center justify-center border border-gold-500/30 cursor-pointer"
+        aria-label="Close memory modal"
+      >
+        ✕
+      </button>
+      <span id="modal-subtitle" class="font-mono text-xs uppercase tracking-widest text-gold-400 block mb-2"></span>
+      <h3 id="modal-title" class="font-display text-2xl font-bold text-white mb-4"></h3>
+      <blockquote id="modal-quote" class="font-serif italic text-lg text-slate-200 leading-relaxed mb-6 p-4 rounded-2xl bg-midnight-950/60 border border-gold-500/20"></blockquote>
+      <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       INTERACTIVE SCRIPTS
+  =========================================== -->
+  <script>
+    // 1. Celebratory Gold & Midnight Confetti Burst
+    function launchGoldConfetti(intensity = 1) {
+      if (typeof confetti !== 'function') return;
+      const count = Math.floor(110 * intensity);
+      const defaults = {
+        origin: { y: 0.65 },
+        colors: ['#D4AF37', '#F5E3A3', '#B59024', '#FFFFFF', '#1E3A8A']
+      };
+
+      confetti({
+        ...defaults,
+        particleCount: Math.floor(count * 0.45),
+        spread: 60,
+        startVelocity: 45,
+      });
+      confetti({
+        ...defaults,
+        particleCount: Math.floor(count * 0.35),
+        spread: 100,
+        decay: 0.92,
+        scalar: 0.9
+      });
+      confetti({
+        ...defaults,
+        particleCount: Math.floor(count * 0.2),
+        spread: 125,
+        startVelocity: 30,
+        scalar: 1.15
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      // Initial celebratory burst on load
+      setTimeout(() => launchGoldConfetti(1), 450);
+
+      // Confetti buttons
+      document.getElementById('nav-confetti-btn')?.addEventListener('click', () => launchGoldConfetti(1.1));
+      document.getElementById('hero-confetti-btn')?.addEventListener('click', () => launchGoldConfetti(1.3));
+      document.getElementById('salute-division-btn')?.addEventListener('click', () => launchGoldConfetti(1));
+
+      // 2. Live Time Since Valediction Gala (Feb 14, 2026 at 17:30 AST)
+      const galaDate = new Date('2026-02-14T17:30:00+03:00');
+      const timerEl = document.getElementById('live-elapsed-timer');
+      function updateTimer() {
+        if (!timerEl) return;
+        const now = new Date();
+        const diffMs = Math.abs(now - galaDate);
+        const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diffMs / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diffMs / (1000 * 60)) % 60);
+        timerEl.textContent = `${days} Days • ${String(hours).padStart(2, '0')} Hrs • ${String(mins).padStart(2, '0')} Mins`;
+      }
+      updateTimer();
+      setInterval(updateTimer, 30000);
+
+      // 3. Gallery Category Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+
+          galleryCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 4. Gallery Lightbox Modal
+      const modal = document.getElementById('gallery-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalSubtitle = document.getElementById('modal-subtitle');
+      const modalQuote = document.getElementById('modal-quote');
+      const modalTags = document.getElementById('modal-tags');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+
+      galleryCards.forEach(card => {
+        card.addEventListener('click', () => {
+          if (!modal) return;
+          modalTitle.textContent = card.getAttribute('data-title') || '';
+          modalSubtitle.textContent = card.getAttribute('data-subtitle') || '';
+          modalQuote.textContent = `“${card.getAttribute('data-quote') || ''}”`;
+          const tags = (card.getAttribute('data-tags') || '').split(',');
+          modalTags.innerHTML = tags
+            .filter(Boolean)
+            .map(t => `<span class="px-3 py-1 rounded-full text-xs font-mono bg-gold-500/15 text-gold-300 border border-gold-500/30">#${t.trim()}</span>`)
+            .join('');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      });
+
+      function closeModal() {
+        modal?.classList.add('hidden');
+        modal?.classList.remove('flex');
+      }
+      closeModalBtn?.addEventListener('click', closeModal);
+      modal?.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // 5. Interactive Division Roll Call Switcher
+      const divisionData = {
+        '12-N': {
+          badge: 'Division Spotlight • Grade 12 N',
+          title: 'Grade 12 N — The Trailblazers of Abu Hamour',
+          quote: '“Known across the senior wing for unmatched spirit, late-night project sprints, and standing together through every milestone — Grade 12 N leads the Final Roll Call with pride.”',
+          stat: '100% Roll Call Attendance • Hilton Gala'
+        },
+        'Science': {
+          badge: 'Stream Spotlight • Grade 12 Science (A–M)',
+          title: 'Senior Science Divisions — Innovators & Scholars',
+          quote: '“From organic chemistry equations and robotics competitions to trading lab coats for tuxedos and gowns at the Grand Ballroom.”',
+          stat: '240+ Graduating Science Seniors'
+        },
+        'Commerce': {
+          badge: 'Stream Spotlight • Grade 12 Commerce (O–S)',
+          title: 'Senior Commerce Divisions — Future Global Leaders',
+          quote: '“Balancing balance sheets by day and orchestrating the most unforgettable farewell gala in Doha by night.”',
+          stat: '130+ Graduating Commerce Seniors'
+        },
+        'Humanities': {
+          badge: 'Stream Spotlight • Grade 12 Humanities (T–V)',
+          title: 'Senior Humanities Divisions — Voices of Vision & Art',
+          quote: '“Poets, debaters, diplomats, and storytellers who gave Valediction 2026 its heart, soul, and standing ovations.”',
+          stat: '80+ Graduating Humanities Seniors'
+        }
+      };
+
+      const divBtns = document.querySelectorAll('.division-btn');
+      divBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          divBtns.forEach(b => {
+            b.className = 'division-btn px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-midnight-800 text-gold-200 border border-gold-500/30 hover:border-gold-400 cursor-pointer transition-all';
+          });
+          btn.className = 'division-btn active px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider bg-gold-500 text-midnight-950 font-bold cursor-pointer transition-all';
+
+          const key = btn.getAttribute('data-division');
+          const info = divisionData[key];
+          if (info) {
+            document.getElementById('division-badge').textContent = info.badge;
+            document.getElementById('division-title').textContent = info.title;
+            document.getElementById('division-quote').textContent = info.quote;
+            document.getElementById('division-stat').textContent = info.stat;
+          }
+        });
+      });
+
+      // 6. Copy Venue Address Button
+      const copyBtn = document.getElementById('copy-venue-btn');
+      copyBtn?.addEventListener('click', async () => {
+        const text = 'Grand Ballroom, Hilton Doha, Diplomatic Area, West Bay, Doha, Qatar';
+        try {
+          await navigator.clipboard.writeText(text);
+          const original = copyBtn.textContent;
+          copyBtn.textContent = '✓ Copied Hilton Doha Address!';
+          setTimeout(() => { copyBtn.textContent = original; }, 2200);
+        } catch (_) {
+          copyBtn.textContent = 'Hilton Doha, West Bay';
+        }
+      });
+
+      // 7. Ambient Arabian Starfield Canvas
+      const canvas = document.getElementById('starfield-canvas');
+      if (canvas && canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+        let stars = [];
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          stars = Array.from({ length: 75 }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 1.6 + 0.4,
+            alpha: Math.random() * 0.7 + 0.2,
+            speed: Math.random() * 0.008 + 0.003,
+            gold: Math.random() > 0.35
+          }));
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        function drawStars() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (const s of stars) {
+            s.alpha += s.speed;
+            if (s.alpha > 0.9 || s.alpha < 0.15) s.speed = -s.speed;
+            ctx.beginPath();
+            ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+            ctx.fillStyle = s.gold
+              ? `rgba(245, 227, 163, ${s.alpha.toFixed(2)})`
+              : `rgba(226, 232, 240, ${s.alpha.toFixed(2)})`;
+            ctx.fill();
+          }
+          requestAnimationFrame(drawStars);
+        }
+        drawStars();
+      }
+    });
+  </script>
+</body>
+</html>
